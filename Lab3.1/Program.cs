@@ -1,6 +1,5 @@
 ﻿using System;
-enum MonthName
-{
+enum MonthName {
     January,
     February,
     March,
@@ -21,7 +20,9 @@ class WhatDay
         Console.Write("Please enter a day number between 1 and 365: ");
         string line = Console.ReadLine();
         int dayNum = int.Parse(line);
+
         int monthNum = 0;
+
         foreach (int daysInMonth in DaysInMonths)
         {
             if (dayNum <= daysInMonth)
@@ -38,7 +39,9 @@ class WhatDay
         string monthName = temp.ToString();
 
         Console.WriteLine("{0} {1}", dayNum, monthName);
+        Console.ReadKey();
     }
     static System.Collections.ICollection DaysInMonths
-                = new int[12] { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+    = new int[12] { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 }
+
