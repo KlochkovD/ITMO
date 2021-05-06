@@ -6,8 +6,8 @@
 	{
 		public static void Main()
 		{
-            int f; // Factorial result
-            bool ok; // Factorial success or failure
+            int f; 
+            bool ok;
             int x;
 
 
@@ -15,9 +15,9 @@
             Console.WriteLine("Number for factorial:");
             x = int.Parse(Console.ReadLine());
 
-            // Test the factorial function
+           
             ok = Utils.Factorial(x, out f);
-            // Output factorial results
+            
 
             if (ok)
                 Console.WriteLine("Factorial(" + x + ") = " + f);
