@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO; 
-namespace FileDetails
+
 {
     class FileDetails
     {
